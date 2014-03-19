@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>:: Versatile ::</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+      <div class="row header">
+        <div class="container">
+          <div class="nav pull_left">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Travel Services</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div> <!-- /nav -->
+          <div class="social_links pull_right">
+            <h1>Follow us on </h1>
+            <a href="#"><img src="images/fb.png" alt=""></a>
+            <a href="#"><img src="images/tweet.png" alt=""></a>
+          </div> <!-- /social_links -->
+        </div> <!-- /container -->
+      </div> <!-- /row header -->
+      <div class="row banner">
+        <div class="container">
+          <div class="logo pull_left"><a href="#"><img src="images/logo.png" alt=""></a></div> <!-- /logo -->
+          <div class="banner_tab pull_right">
+            <ul class="tab_nav">
+              <li><a href="#" class="tab1 active" attr="tab1"><i class="icon-flight"></i> Flights</a></li>
+              <li><a href="#" class="tab2"><i class="icon-hotel"></i> Hotels</a></li>
+              <li><a href="#" class="tab3"><i class="icon-package"> </i> Packages</a></li>
+              <li><a href="#" class="tab4"><i class="icon-transport"></i> Transport</a></li>
+            </ul>
+            <div class="tab_body_wrap">
+            <div class="tab_body tab1_body tab_body_current">
+              <div class="form_control">
+                <label for="flight_type">Flight Type</label>
+                <input type="radio" name="flight_type" id="domestic"> <label for="domestic"><span>Domestic</span></label> 
+                <input type="radio" name="flight_type" id="international"><label for="international"><span>International</span></label> 
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                <label for="trip_type">Trip Type</label>
+                <input type="radio" name="trip_type" id="round_trip"> <label for="round_trip"><span>Round Trip</span></label>
+                <input type="radio" name="trip_type" id="one_way"><label for="one_way"><span>One Way</span></label>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="from">From</label>
+                  <select name="from" id="">
+                      <option value="">Select a City</option>
+                      <option value="">Select a City 2</option>
+                  </select>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="to">To</label>
+                  <select name="from" id="">
+                      <option value="">Select a City</option>
+                      <option value="">Select a City 2</option>
+                  </select>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="depart">Depart</label>
+                  <input type="date" class="date_input" id="depart" placeholder="mm/dd/yyyy">
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="return">Return</label>
+                  <input type="date" class="date_input" id="return" placeholder="mm/dd/yyyy">
+              </div> <!-- /form_control -->
+              <div class="form_control long person_number">
+                  <label for="to">Adult (12+yrs)</label>
+                  <select name="from" id="" class="tiny">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                  </select>
+                  <label for="to">Child (2 - 12 yrs)</label>
+                  <select name="from" id="" class="tiny">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                  </select>
+                  <label for="to">Infant (0 - 2 yrs)</label>
+                  <select name="from" id="" class="tiny">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                  </select>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="to">Class</label>
+                  <select name="from" id="">
+                      <option value="">Economy</option>
+                      <option value="">2</option>
+                  </select>
+              </div> <!-- /form_control -->
+             <div class="form_control">
+                  <a type="button" class="submit_btn"> Submit <i class="icon-green_arrow_left"></i></a>
+              </div> <!-- /form_control --> 
+            </div> <!-- /tab_body  -->
+            <div class="tab_body tab2_body">
+              <div class="form_control">
+                <label for="flight_type">Flight Type</label>
+                <input type="radio" name="flight_type"> <span>Domestic</span>
+                <input type="radio" name="flight_type"> <span>International</span>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                <label for="trip_type">Trip Type</label>
+                <input type="radio" name="trip_type"> <span>Round Trip</span>
+                <input type="radio" name="trip_type"> <span>One Way</span>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="from">From</label>
+                  <select name="from" id="">
+                      <option value="">Select a City</option>
+                      <option value="">Select a City 2</option>
+                  </select>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="to">To</label>
+                  <select name="from" id="">
+                      <option value="">Select a City</option>
+                      <option value="">Select a City 2</option>
+                  </select>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="to">Depart</label>
+                  <input type="date" class="date_input">
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="to">Return</label>
+                  <input type="date" class="date_input">
+              </div> <!-- /form_control -->
+              <div class="form_control long person_number">
+                  <label for="to">Adult (12+yrs)</label>
+                  <select name="from" id="" class="tiny">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                  </select>
+                  <label for="to">Child (2 - 12 yrs)</label>
+                  <select name="from" id="" class="tiny">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                  </select>
+                  <label for="to">Infant (0 - 2 yrs)</label>
+                  <select name="from" id="" class="tiny">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                  </select>
+              </div> <!-- /form_control -->
+              <div class="form_control">
+                  <label for="to">Class</label>
+                  <select name="from" id="">
+                      <option value="">Economy</option>
+                      <option value="">2</option>
+                  </select>
+              </div> <!-- /form_control -->
+             <div class="form_control">
+                  <button type="button" class="submit_btn"> Submit <i class="icon-green_arrow_left"></i></button>
+              </div> <!-- /form_control --> 
+            </div> <!-- /tab_body  -->
+            </div> <!-- tab_body_wrap -->
+          </div> <!-- /banner_tab -->
+        </div>
+      </div> <!-- row banner -->
+      <div class="row">
+        <div class="container"> 
+          <div class="main_container pull_left">
+            <h1>Most Popular Package</h1>
+            <div class="white_tab">
+            <ul class="tab_nav pull_right">
+              <li><a href="#" class="tab1 active" attr="tab1">Trekking</a></li>
+              <li><a href="#" class="tab2">Tour</a></li>
+              <li><a href="#" class="tab3">Climbing</a></li>
+              <li><a href="#" class="tab4">Adventure</a></li>
+              <li><a href="#" class="tab4">Other Destinations</a></li>
+            </ul>
+            <div class="tab_body_wrap">
+            <div class="tab_body tab1_body tab_body_current">
+              <div class="info_box_wrap">
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+              </div> <!-- /info_box_wrap -->
+            </div> <!-- /tab_body  -->
+            </div> <!-- /tab_body_wrap -->
+            </div><!-- /white_tab -->
+
+            <h1>Most Popular Package</h1>
+            <div class="info_box_wrap">
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+                  <div class="info_box">
+                    <div class="info_thumb"><img src="images/thumb1.jpg" alt=""></div>
+                    <h2>Annapurna Base Camp Treking</h2>
+                    <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+                    <a href="#" class="green_btn pull_left">View Package</a>
+                    <span class="trip_days pull_left"><i class="icon-calander_grey"></i>16 days</span>
+                  </div> <!-- info_box -->
+              </div> <!-- /info_box_wrap -->         
+          </div> <!-- main_container -->
+          <div class="aside pull_right">
+          <div class="formwrapper">
+            <h1>Tailormade Travel Plan</h1>
+            <form action="">
+              <div class="row form_row">
+                <label for="fullname">Full Name</label> 
+                <input type="text">
+              </div>
+              <div class="row form_row">
+                <label for="email">Email Id</label> 
+                <input type="text">
+              </div>
+              <div class="row form_row">
+                <label for="country">Country</label> 
+                <select name="country" id="">
+                  <option value="country">Select your country</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="phone">Phone no</label>
+                <input type="text">
+              </div>
+              <div class="row form_row">
+                <label for="destination">Destination</label> 
+                <select name="country" id="">
+                  <option value="country">Select Destination</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="destination">Arrival</label> 
+                <input type="date">
+              </div>
+              <div class="row form_row">
+                <label for="destination">Duration</label> 
+                <select name="country" id="">
+                  <option value="country">Select Duration</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="destination">Tour Type</label> 
+                <select name="country" id="">
+                  <option value="country">Any</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="destination">Budget</label> 
+                <select name="country" id="">
+                  <option value="country">Economy</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="destination">No. of pax</label> 
+                <input type="text">
+              </div>
+              <div class="row form_row">
+                <label for="destination" class="full_width">Requirments and travel plans</label> 
+              </div>
+              <div class="row form_row">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div class="row form_row">
+                <label for=""><input type="submit" class="green_btn submit_btn" value="Request a Quote"></label>
+              </div>
+            </form>
+            </div> <!-- /formwrapper -->
+            <div class="info_box">
+              <h1>Testimonials</h1>
+              <div class="info_thumb"><img src="images/jyasa_ovel.jpg" alt=""></div>
+              <p>Trekking in Annapurna provides you with unparalleled access to spectacular horizons of snowy peaks, and the Annapurna Base </p>
+              <p><strong>Sachin Dangol</strong>, Nepal</p>
+          </div> <!-- info_box -->
+          </div> <!-- /aside -->
+        </div> <!-- /container -->
+      </div> <!-- /row -->
+      <div class="row footer_links">
+        <div class="container">
+        <div class="location pull_left">
+          <h3>Versatile Tours &amp; Travels (P.) Ltd.</h3>
+          <p>7-Corner, Thamel-16 Kathmandu, Nepal <br>
+            Tel: 977-1-4700373, 4700715<br>
+            Fax: 977-1-4700285<br>
+            Email: versatile@travelmakers.com, versatiletkt@hotmail.com
+          </p>
+          <p class="footer_logo_container"><a href="#"><img src="images/ntb.png" alt=""></a>
+          <a href="#"><img src="images/pata.png" alt=""></a>
+          <a href="#"><img src="images/logo3.png" alt=""></a>
+          <a href="#"><img src="images/logo1.png" alt=""></a>
+          <a href="#"><img src="images/iata.png" alt=""></a></p>
+        </div> <!-- /location -->
+        <div class="link_list">
+          <h3>Destination</h3>
+          <ul>
+            <li><a href="#">Nepal</a></li>
+            <li><a href="#">Tibet</a></li>
+            <li><a href="#">Bhutan</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </div> <!-- /link_list -->
+        <div class="link_list">
+          <h3>Destination</h3>
+          <ul>
+            <li><a href="#">Nepal</a></li>
+            <li><a href="#">Tibet</a></li>
+            <li><a href="#">Bhutan</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </div> <!-- /link_list -->
+        <div class="link_list">
+          <h3>Destination</h3>
+          <ul>
+            <li><a href="#">Nepal</a></li>
+            <li><a href="#">Tibet</a></li>
+            <li><a href="#">Bhutan</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </div> <!-- /link_list -->
+        <div class="link_list">
+          <h3>Destination</h3>
+          <ul>
+            <li><a href="#">Nepal</a></li>
+            <li><a href="#">Tibet</a></li>
+            <li><a href="#">Bhutan</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </div> <!-- /link_list -->
+        </div> <!-- /container -->
+      </div> <!-- /footer_links -->
+      <div class="row footer_bottom">
+        <div class="container"><p class="pull_left">© 2014,  Versatile Tours &amp; Travels (P.) Ltd.</p><p class="pull_right"><a href="#">Website by <span><img src="images/jyasha_logo.png" alt=""></span> Jyasha Creations.</a></p></div>
+      </div>
+
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		-->
+		<script src="js/vendor/jquery-1.10.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            // g.src='//www.google-analytics.com/ga.js';
+            // s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
