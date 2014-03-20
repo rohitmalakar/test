@@ -19,7 +19,7 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-      <div class="row header">
+      <div class="row outer header">
         <div class="container">
           <div class="nav pull_left">
             <ul>
@@ -37,15 +37,15 @@
           </div> <!-- /social_links -->
         </div> <!-- /container -->
       </div> <!-- /row header -->
-      <div class="row banner">
+      <div class="row outer banner">
         <div class="container">
           <div class="logo pull_left"><a href="#"><img src="images/logo.png" alt=""></a></div> <!-- /logo -->
-          <div class="banner_tab pull_right">
+          <div class="banner_tab pull_right tab_wrap">
             <ul class="tab_nav">
-              <li><a href="#" class="tab1 active" attr="tab1"><i class="icon-flight"></i> Flights</a></li>
-              <li><a href="#" class="tab2"><i class="icon-hotel"></i> Hotels</a></li>
-              <li><a href="#" class="tab3"><i class="icon-package"> </i> Packages</a></li>
-              <li><a href="#" class="tab4"><i class="icon-transport"></i> Transport</a></li>
+              <li><a href="#" ref="tab1" class="tab1 active" attr="tab1"><i class="icon-flight"></i> Flights</a></li>
+              <li><a href="#" ref="tab2" class="tab2"><i class="icon-hotel"></i> Hotels</a></li>
+              <li><a href="#" ref="tab3" class="tab3"><i class="icon-package"> </i> Packages</a></li>
+              <li><a href="#" ref="tab4" class="tab4"><i class="icon-transport"></i> Transport</a></li>
             </ul>
             <div class="tab_body_wrap">
             <div class="tab_body tab1_body tab_body_current">
@@ -110,81 +110,29 @@
               </div> <!-- /form_control --> 
             </div> <!-- /tab_body  -->
             <div class="tab_body tab2_body">
-              <div class="form_control">
-                <label for="flight_type">Flight Type</label>
-                <input type="radio" name="flight_type"> <span>Domestic</span>
-                <input type="radio" name="flight_type"> <span>International</span>
-              </div> <!-- /form_control -->
-              <div class="form_control">
-                <label for="trip_type">Trip Type</label>
-                <input type="radio" name="trip_type"> <span>Round Trip</span>
-                <input type="radio" name="trip_type"> <span>One Way</span>
-              </div> <!-- /form_control -->
-              <div class="form_control">
-                  <label for="from">From</label>
-                  <select name="from" id="">
-                      <option value="">Select a City</option>
-                      <option value="">Select a City 2</option>
-                  </select>
-              </div> <!-- /form_control -->
-              <div class="form_control">
-                  <label for="to">To</label>
-                  <select name="from" id="">
-                      <option value="">Select a City</option>
-                      <option value="">Select a City 2</option>
-                  </select>
-              </div> <!-- /form_control -->
-              <div class="form_control">
-                  <label for="to">Depart</label>
-                  <input type="date" class="date_input">
-              </div> <!-- /form_control -->
-              <div class="form_control">
-                  <label for="to">Return</label>
-                  <input type="date" class="date_input">
-              </div> <!-- /form_control -->
-              <div class="form_control long person_number">
-                  <label for="to">Adult (12+yrs)</label>
-                  <select name="from" id="" class="tiny">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                  </select>
-                  <label for="to">Child (2 - 12 yrs)</label>
-                  <select name="from" id="" class="tiny">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                  </select>
-                  <label for="to">Infant (0 - 2 yrs)</label>
-                  <select name="from" id="" class="tiny">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                  </select>
-              </div> <!-- /form_control -->
-              <div class="form_control">
-                  <label for="to">Class</label>
-                  <select name="from" id="">
-                      <option value="">Economy</option>
-                      <option value="">2</option>
-                  </select>
-              </div> <!-- /form_control -->
-             <div class="form_control">
-                  <button type="button" class="submit_btn"> Submit <i class="icon-green_arrow_left"></i></button>
-              </div> <!-- /form_control --> 
+              tab 2
+            </div> <!-- /tab_body  -->
+            <div class="tab_body tab3_body">
+              tab 3
+            </div> <!-- /tab_body  -->
+            <div class="tab_body tab4_body">
+              tab 4
             </div> <!-- /tab_body  -->
             </div> <!-- tab_body_wrap -->
           </div> <!-- /banner_tab -->
         </div>
       </div> <!-- row banner -->
-      <div class="row">
+      <div class="row outer">
         <div class="container"> 
           <div class="main_container pull_left">
             <h1>Most Popular Package</h1>
-            <div class="white_tab">
+            <div class="white_tab tab_wrap">
             <ul class="tab_nav pull_right">
-              <li><a href="#" class="tab1 active" attr="tab1">Trekking</a></li>
-              <li><a href="#" class="tab2">Tour</a></li>
-              <li><a href="#" class="tab3">Climbing</a></li>
-              <li><a href="#" class="tab4">Adventure</a></li>
-              <li><a href="#" class="tab4">Other Destinations</a></li>
+              <li><a href="#tab1_body1" ref="tab1" class="active">Trekking</a></li>
+              <li><a href="#tab1_body1" ref="tab2">Tour</a></li>
+              <li><a href="#tab1_body1" ref="tab3">Climbing</a></li>
+              <li><a href="#tab1_body1" ref="tab4">Adventure</a></li>
+              <li><a href="#tab1_body1" ref="tab5">Other Destinations</a></li>
             </ul>
             <div class="tab_body_wrap">
             <div class="tab_body tab1_body tab_body_current">
@@ -233,6 +181,15 @@
                   </div> <!-- info_box -->
               </div> <!-- /info_box_wrap -->
             </div> <!-- /tab_body  -->
+            <div class="tab_body tab2_body tab_body_current">
+            tab2
+            </div>
+            <div class="tab_body tab3_body tab_body_current">
+            tab3
+            </div>
+            <div class="tab_body tab4_body tab_body_current">
+            tab4
+            </div>
             </div> <!-- /tab_body_wrap -->
             </div><!-- /white_tab -->
 
@@ -319,7 +276,7 @@
                 <label for="destination" class="full_width">Requirments and travel plans</label> 
               </div>
               <div class="row form_row">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="" id=""></textarea>
               </div>
               <div class="row form_row">
                 <label for=""><input type="submit" class="green_btn submit_btn" value="Request a Quote"></label>
@@ -335,7 +292,7 @@
           </div> <!-- /aside -->
         </div> <!-- /container -->
       </div> <!-- /row -->
-      <div class="row footer_links">
+      <div class="row outer footer_links">
         <div class="container">
         <div class="location pull_left">
           <h3>Versatile Tours &amp; Travels (P.) Ltd.</h3>
@@ -388,7 +345,7 @@
         </div> <!-- /link_list -->
         </div> <!-- /container -->
       </div> <!-- /footer_links -->
-      <div class="row footer_bottom">
+      <div class="row outer footer_bottom">
         <div class="container"><p class="pull_left">© 2014,  Versatile Tours &amp; Travels (P.) Ltd.</p><p class="pull_right"><a href="#">Website by <span><img src="images/jyasha_logo.png" alt=""></span> Jyasha Creations.</a></p></div>
       </div>
 

@@ -108,8 +108,10 @@ h3{
 .row{
 	width: 100%;
 	clear: both;
-	display: inline-block;
-	float: left;
+	float: left; 
+}
+.row.outer{
+	min-width: 1181px !important;
 }
 .container{
 	width: 1181px;
@@ -554,7 +556,7 @@ label{
 	color: #FFF;
 	border: none;
 }
-.trip_tab .tab_nav li{
+.trip_tab .trip_tab_nav li{
 	background: rgba(0, 0, 0, 0.5);
 	display: inline-block;
 	float: left;
@@ -565,7 +567,7 @@ label{
 	padding: 14px 14px 0 14px;
 	margin-right: 0;
 }
-.trip_tab .tab_nav li a{
+.trip_tab .trip_tab_nav li a{
 	padding: 0 25px;
 	display: block;
 	background: transparent;
@@ -580,16 +582,16 @@ label{
 	text-align: center;
 	text-shadow: none;
 }
-.trip_tab .tab_nav li a:hover{
+.trip_tab .trip_tab_nav li a:hover, .trip_tab .trip_tab_nav li a.active{
 	background: #FFF;
 	color: #000;
 }
-.trip_tab .tab_nav li a:hover .icon-detail{background-position: -120px -70px;}
-.trip_tab .tab_nav li a:hover .icon-list{background-position: -184px -70px;}
-.trip_tab .tab_nav li a:hover .icon-gallery{background-position: -249px -70px;}
-.trip_tab .tab_nav li a:hover .icon-inout{background-position: -318px -70px;}
-.trip_tab .tab_nav li a:hover .icon-check{background-position: -380px -70px;}
-.trip_tab .tab_nav li a:hover .icon-faq{background-position: -447px -70px;}
+.trip_tab .trip_tab_nav li a:hover .icon-detail, .trip_tab .trip_tab_nav li a.active .icon-detail{background-position: -120px -70px;}
+.trip_tab .trip_tab_nav li a:hover .icon-list, .trip_tab .trip_tab_nav li a.active .icon-list{background-position: -184px -70px;}
+.trip_tab .trip_tab_nav li a:hover .icon-gallery, .trip_tab .trip_tab_nav li a.active .icon-gallery{background-position: -249px -70px;}
+.trip_tab .trip_tab_nav li a:hover .icon-inout, .trip_tab .trip_tab_nav li a.active .icon-inout{background-position: -318px -70px;}
+.trip_tab .trip_tab_nav li a:hover .icon-check, .trip_tab .trip_tab_nav li a.active .icon-check{background-position: -380px -70px;}
+.trip_tab .trip_tab_nav li a:hover .icon-faq, .trip_tab .trip_tab_nav li a.active .icon-faq{background-position: -447px -70px;}
 .trip_tab i{
 	clear: both;
 	display: block;
@@ -708,10 +710,10 @@ label{
 	-moz-border-radius: 0;
 	border-radius: 0;
 }
-.aside_tab .tab_nav li a:hover{
+.aside_tab .tab_nav li a:hover, .aside_tab .tab_nav li a.active{
 	background: #f3f3f3;	
 }
-.aside_tab .tab_nav li a:hover i{
+.aside_tab .tab_nav li a:hover i, .aside_tab .tab_nav li a.active i{
 
 	-ms-background-position-y: -67px;
 	 background-position-y: -67px;
@@ -752,7 +754,7 @@ label{
 .aside .tab_body input, .aside .tab_body select{
 	width: 180px;
 	vertical-align: middle;
-	text-indent: 12px;
+	text-indent: 5px;
 }
 .aside input.icon-date{
 	background-color: #fff;

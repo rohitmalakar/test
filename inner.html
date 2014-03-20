@@ -14,11 +14,11 @@
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="tripdetail_page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-      <div class="row header">
+      <div class="row outer header">
         <div class="container">
           <div class="nav pull_left">
             <ul>
@@ -36,19 +36,19 @@
           </div> <!-- /social_links -->
         </div> <!-- /container -->
       </div> <!-- /row header -->
-      <div class="row banner" style="background-image: url('images/inner_banner.jpg');">
+      <div class="row outer banner" style="background-image: url('images/inner_banner.jpg');">
         <div class="container">
           <div class="logo pull_left"><a href="#"><img src="images/logo.png" alt=""></a></div> <!-- /logo -->
           <div class="banner_btm_trip_info">
           <div class="trip_tab pull_left">
             <h1>Everest Base Camp Trek</h1>
-            <ul class="tab_nav pull_left">
-                <li><a href="#detail" class="tab1 active" attr="tab1"><i class="icon-detail"></i> Detail</a></li>
-                <li><a href="#itinerary" class="tab2"><i class="icon-list"></i> Itinerary</a></li>
-                <li><a href="#gallery" class="tab3"><i class="icon-gallery"></i> Gallery</a></li>
-                <li><a href="#inclustion_exclusion" class="tab4"><i class="icon-inout"></i> Inclusion/Exclusion</a></li>
-                <li><a href="#check_list" class="tab4"><i class="icon-check"></i> Check List</a></li>
-                <li><a href="#faq" class="tab4"><i class="icon-faq"></i> FAQ</a></li>
+            <ul class="trip_tab_nav pull_left" id="trip_tab_nav">
+                <li><a href="#detail" ref="tab1" class="active"><i class="icon-detail"></i> Detail</a></li>
+                <li><a href="#itinerary" ref="tab2"><i class="icon-list"></i> Itinerary</a></li>
+                <li><a href="#gallery" ref="tab3"><i class="icon-gallery"></i> Gallery</a></li>
+                <li><a href="#inclustion_exclusion" ref="tab4"><i class="icon-inout"></i> Inclusion/Exclusion</a></li>
+                <li><a href="#check_list" ref="tab4"><i class="icon-check"></i> Check List</a></li>
+                <li><a href="#faq" ref="tab4"><i class="icon-faq"></i> FAQ</a></li>
             </ul>
           </div> <!-- /trip_tab -->
           <div class="trip_info pull_right">
@@ -65,31 +65,31 @@
           </div> <!-- /banner_btm_trip_info -->
         </div>
       </div> <!-- row banner -->
-      <div class="row">
+      <div class="row outer">
         <div class="container"> 
           <div class="main_container pull_left">
           <div class="row">
-          <div class="tab_body_wrap detail_tab">
-            <div id="detail" class="tab_body tab_body_current">
-            <p>Prepared for those wanting the 'classic' Everest Base Camp Trek where you find Sherpa culture, and chances to video-shoot some of the best landscapes in the world. The adventure also takes you through challenging terrain that includes glacial moraines and a steep climb up Kala Patthar where the adrenalin really goes into overdrive. As you hike up to EBC, expect some 3-4 hours hiking every day of the trip, but be prepared for some longer days on the return journey. A reasonable level of fitness is required. After exploring historical Kathmandu, we take a short flight to the hillside village of Lukla (2800m). As we move through the splendid mix and eye-catching vegetation of Sagarmatha National Park, we trek to the Sherpa 'capital' of Namche Bazaar. This is an interesting, bustling and friendly town where amazingly, even at such a remote outpost &amp; altitude, almost everything under the skies, related to the outside world for you to communicate from where you are can be found here. Namche was formerly a trading post between Nepal and Tibet.
-            </p> 
-            <p>We allow a day's acclimatization hereabouts and then move on to the beautiful Thyangboche Monastery. At this peaceful landmark, we find ourselves amongst the Mani walls, &amp; prayer flags that whisper odes of prayers to the gods for the souls departed and chortens &amp; then we soon realize we are in the shadows of the magnificent Everest massif and Ama Dablam, where the views are breathtakingly dumbfounding. </p>
-            <p>The trek from Thyangboche ascends slowly but steadily to Dingboche, Lobuche and finally Gorek Shep, advancing above the tree-line into more rugged and moonscape-like surroundings. Gorek Shep, at 5100m is in fact the highest point that we will lodge at, and we take our time to reach this altitude after getting well acclimatized. Naturally, we leave our packs at Gorek Shep to make an afternoon incursion to Everest Base </p> 
+          <div class="tab_body_wrap detail_tab" id="trip_tab_content">
+            <div id="detail tab1_body" class="tab_body tab_body_current">
+              <p>Prepared for those wanting the 'classic' Everest Base Camp Trek where you find Sherpa culture, and chances to video-shoot some of the best landscapes in the world. The adventure also takes you through challenging terrain that includes glacial moraines and a steep climb up Kala Patthar where the adrenalin really goes into overdrive. As you hike up to EBC, expect some 3-4 hours hiking every day of the trip, but be prepared for some longer days on the return journey. A reasonable level of fitness is required. After exploring historical Kathmandu, we take a short flight to the hillside village of Lukla (2800m). As we move through the splendid mix and eye-catching vegetation of Sagarmatha National Park, we trek to the Sherpa 'capital' of Namche Bazaar. This is an interesting, bustling and friendly town where amazingly, even at such a remote outpost &amp; altitude, almost everything under the skies, related to the outside world for you to communicate from where you are can be found here. Namche was formerly a trading post between Nepal and Tibet.
+              </p> 
+              <p>We allow a day's acclimatization hereabouts and then move on to the beautiful Thyangboche Monastery. At this peaceful landmark, we find ourselves amongst the Mani walls, &amp; prayer flags that whisper odes of prayers to the gods for the souls departed and chortens &amp; then we soon realize we are in the shadows of the magnificent Everest massif and Ama Dablam, where the views are breathtakingly dumbfounding. </p>
+              <p>The trek from Thyangboche ascends slowly but steadily to Dingboche, Lobuche and finally Gorek Shep, advancing above the tree-line into more rugged and moonscape-like surroundings. Gorek Shep, at 5100m is in fact the highest point that we will lodge at, and we take our time to reach this altitude after getting well acclimatized. Naturally, we leave our packs at Gorek Shep to make an afternoon incursion to Everest Base </p> 
             </div> <!-- detail -->
-            <div id="itinerary">
-              
+            <div id="itinerary tab2_body" class="tab_body">
+              itinerary
             </div> <!-- /itinerary -->
-            <div id="gallery">
-              
+            <div id="gallery tab3_body" class="tab_body">
+              gallery
             </div>
-            <div id="inclustion_exclusion">
-              
+            <div id="inclustion_exclusion tab4_body" class="tab_body">
+              include exclude
             </div>
-            <div id="check_list">
-              
+            <div id="check_list tab5_body" class="tab_body">
+              check list
             </div>
-            <div id="faq">
-              
+            <div id="faq tab6_body" class="tab_body">
+              faq
             </div>
           </div> <!-- /tab_body -->
           </div>
@@ -119,79 +119,88 @@
               </div> <!-- /info_box_wrap -->         
           </div> <!-- main_container -->
           <div class="aside pull_right">
-          <div class="formwrapper">
+          <div class="formwrapper tab_wrap">
           <div class="aside_tab row">
             <ul class="tab_nav pull_left">
-                <li><a href="#detail" class="tab1 active" attr="tab1"><i class="icon-package_box"></i></a></li>
-                <li><a href="#itinerary" class="tab2"><i class="icon-plane"></i></a></li>
-                <li><a href="#gallery" class="tab3"><i class="icon-hotel"></i></a></li>
-                <li><a href="#inclustion_exclusion" class="tab4"><i class="icon-transport"></i></a></li>
+                <li><a href="#detail" ref="tab1" class="tab1 active" attr="tab1"><i class="icon-package_box"></i></a></li>
+                <li><a href="#itinerary" ref="tab2"><i class="icon-plane"></i></a></li>
+                <li><a href="#gallery" ref="tab3"><i class="icon-hotel"></i></a></li>
+                <li><a href="#inclustion_exclusion" ref="tab4"><i class="icon-transport"></i></a></li>
             </ul>
           </div> <!-- /aside_tab row -->
           <div class="tab_body_wrap">
-          <div class="tab_body tab_body_current">
+          <div class="tab_body tab1_body tab_body_current">
             <form action="">
               <div class="row form_row">
-                <label for="fullname">Full Name</label> 
-                <input type="text">
-              </div>
-              <div class="row form_row">
-                <label for="email">Email Id</label> 
-                <input type="text">
-              </div>
-              <div class="row form_row">
-                <label for="country">Country</label> 
+                <label for="fullname">Flight Type</label> 
                 <select name="country" id="">
                   <option value="country">Select your country</option>
                 </select>
               </div>
               <div class="row form_row">
-                <label for="phone">Phone no</label>
-                <input type="text">
-              </div>
-              <div class="row form_row">
-                <label for="destination">Destination</label> 
+                <label for="email">Trip Type</label> 
                 <select name="country" id="">
-                  <option value="country">Select Destination</option>
+                  <option value="country">Select your country</option>
                 </select>
               </div>
               <div class="row form_row">
-                <label for="destination">Arrival</label> 
+                <label for="country">From</label> 
+                <select name="country" id="">
+                  <option value="country">Select your country</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="phone">To</label>
+                <select name="country" id="">
+                  <option value="country">Select your country</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="destination">Depart</label> 
                 <input type="date" class="icon-date" placeholder="mm/dd/yyyy">
               </div>
               <div class="row form_row">
-                <label for="destination">Duration</label> 
+                <label for="destination">Return</label> 
+                <input type="date" class="icon-date" placeholder="mm/dd/yyyy">
+              </div>
+              <div class="row form_row">
+                <label for="destination">Adult(12+)</label> 
                 <select name="country" id="">
-                  <option value="country">Select Duration</option>
+                  <option value="country">1</option>
                 </select>
               </div>
               <div class="row form_row">
-                <label for="destination">Tour Type</label> 
+                <label for="destination">Child(2-12)</label> 
                 <select name="country" id="">
-                  <option value="country">Any</option>
+                  <option value="country">1</option>
                 </select>
               </div>
               <div class="row form_row">
-                <label for="destination">Budget</label> 
+                <label for="destination">Infant(0-2)</label> 
+                <select name="country" id="">
+                  <option value="country">1</option>
+                </select>
+              </div>
+              <div class="row form_row">
+                <label for="destination">Class</label> 
                 <select name="country" id="">
                   <option value="country">Economy</option>
                 </select>
-              </div>
-              <div class="row form_row">
-                <label for="destination">No. of pax</label> 
-                <input type="text">
-              </div>
-              <div class="row form_row">
-                <label for="destination" class="full_width">Requirments and travel plans</label> 
-              </div>
-              <div class="row form_row">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
               </div>
               <div class="row form_row">
                 <label for=""><input type="submit" class="green_btn submit_btn" value="Request a Quote"></label>
               </div>
             </form>
             </div><!-- /tab_body tab_body_current -->
+            <div class="tab_body tab2_body">
+            tab2
+            </div><!-- /tab_body 2 tab_body_current -->
+            <div class="tab_body tab3_body">
+            tab3
+            </div><!-- /tab_body 2 tab_body_current -->
+            <div class="tab_body tab4_body">
+            tab4
+            </div><!-- /tab_body 2 tab_body_current -->
             </div> <!-- /tab_body_wrap -->
             </div> <!-- /formwrapper -->
             <div class="info_box">
@@ -203,7 +212,7 @@
           </div> <!-- /aside -->
         </div> <!-- /container -->
       </div> <!-- /row -->
-      <div class="row footer_links">
+      <div class="row outer footer_links">
         <div class="container">
         <div class="location pull_left">
           <h3>Versatile Tours &amp; Travels (P.) Ltd.</h3>
@@ -256,7 +265,7 @@
         </div> <!-- /link_list -->
         </div> <!-- /container -->
       </div> <!-- /footer_links -->
-      <div class="row footer_bottom">
+      <div class="row outer footer_bottom">
         <div class="container"><p class="pull_left">© 2014,  Versatile Tours &amp; Travels (P.) Ltd.</p><p class="pull_right"><a href="#">Website by <span><img src="images/jyasha_logo.png" alt=""></span> Jyasha Creations.</a></p></div>
       </div>
 
